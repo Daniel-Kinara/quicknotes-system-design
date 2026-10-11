@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f2f4f8;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1f78b4;
+}
+
+button:disabled {
+  background-color: #9bb7cc;
+  cursor: not-allowed;
+}
+
+/* ---------- Status messages ---------- */
+#status {
+  margin: 12px 0 0;
+  padding: 0;
+  min-height: 1.5em;
+}
+
+.status-loading {
+  color: #555;
+  font-style: italic;
+}
+
+.status-success {
+  color: #1e6b34;
+  background-color: #e3f6e8;
+  border-left: 4px solid #2ecc71;
+  padding: 8px 12px;
+}
+
+.status-error {
+  color: #8b1a1a;
+  background-color: #fde8e8;
+  border-left: 4px solid #e74c3c;
+  padding: 8px 12px;
+}
+
+/* ---------- Notes ---------- */
+#notes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-card {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #3498db;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.note-card h3 {
+  margin: 0 0 6px;
+  text-transform: capitalize;
+}
+
+.note-card p {
+  margin: 0 0 10px;
+}
+
+.delete-btn {
+  background-color: #c0392b;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background-color: #922b21;
+}
+
+.empty-message {
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px 12px;
+  }
+
+  section {
+    padding: 14px;
+  }
+}
